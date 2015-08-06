@@ -219,7 +219,7 @@ a:after {
 /* item Wrap */
 
 #itemwrap {
-	background: url(assets/item-bg.jpg) no-repeat center top;
+	background: url(../assets/item-bg.jpg) no-repeat center top;
 	margin-top: 0px;
 	padding-top:70px;
 	text-align:center;
