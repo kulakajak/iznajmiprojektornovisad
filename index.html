@@ -248,18 +248,20 @@
           Popunite formular i mi vam šaljemo ponudu/profakturu uglavnom u roku od 15 minuta</h3>
         <form action="https://formspree.io/projektor@trk.in.rs"
           method="POST" class="form">
-          <input type="hidden" name="_subject" value="Iznajmljivanje
-          projektora">
-          <input type="hidden" name="_next"
-          value="//www.iznajmljivanjeprojektoranovisad.in.rs#hvala" />
+          <input type="hidden" name="_subject" value="Iznajmljivanje projektora">
+          <input type="hidden" name="_next" value="//www.iznajmljivanjeprojektoranovisad.in.rs#hvala" />
+          <div class='form-group'>
+            <label for="email">Vaša imejl adresa *</label>
+            <input type="email" name="_replyto" id="email" required
+            placeholder="ime@preduzece.com">
+          </div>
           <div class='form-group'>
             <label for="name">Naziv vaše kompanije ili Vaše ime *</label>
             <input type="text" name="name" id="name" required placeholder="Moje Preduzeće">
           </div>
           <div class='form-group'>
-            <label for="email">Vaša imejl adresa *</label>
-            <input type="email" name="_replyto" id="email" required
-            placeholder="ime@preduzece.com">
+            <label for="mb">Matični broj</label>
+            <input type="text" name="maticni_broj" id="mb" placeholder="12084531">
           </div>
           <div class='form-group'>
             <label for="pib">PIB</label>
