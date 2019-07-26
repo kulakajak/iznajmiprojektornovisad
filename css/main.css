@@ -30,15 +30,24 @@
   left: 0%;
 }
 
-.form input,.form textarea {
-  display: block;
-  margin: auto;
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input, .form textarea {
+  float: right;
+}
+
+.form label {
+  color: #dbdb8c;
 }
 
 .send {
   margin-top: 10px!important;
   font-size: x-large;
-  background: silver;
+  background: #f85c37;
+  color: #ffffff;
+  padding: 0 100px;
 }
 
 /*
