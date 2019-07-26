@@ -252,14 +252,14 @@ a:after {
 #itemwrap h1 {
 	margin-top: 40px;
 	color: white;
-	font-size: 4em;
+	font-size: 3em;
 	font-weight: 700;
 	letter-spacing: 3px;
 }
 
 #itemwrap h2 {
 	color: white;
-	font-size: 50px;
+	font-size: 2em;
 	font-weight: 100;
 	letter-spacing: 2px;
 }
