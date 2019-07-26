@@ -1,3 +1,25 @@
+.new-site {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background: silver;
+  padding-left: 7px;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-right: 2px;
+  text-align: center;
+  opacity: 0.7;
+  transition-duration: 0.7s;
+  transition-property: opacity, color, background-color;
+}
+.new-site:hover {
+  background-color: white;
+  color: blue;
+  border-left: 1px solid blue;
+  border-top: 1px solid blue;
+  opacity: 1;
+}
 .thumb {
   height: 50px;
 }
@@ -229,7 +251,7 @@ a:after {
 #c {
 	background: #222222;
 	padding-top: 15px;
-	text-align: right;
+	text-align: center;
 }
 
 #c p {
