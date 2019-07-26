@@ -1,7 +1,6 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "jekyll"
-gem "guard"
-gem "guard-livereload"
-
+gem 'guard'
+gem 'guard-livereload'
+gem 'jekyll'
 gem 'jekyll-sitemap'
