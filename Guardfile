@@ -1,5 +1,4 @@
 # A samle Guardfile
-guard "livereload" do
+guard 'livereload' do
   watch(%r{_site/.+})
 end
-
