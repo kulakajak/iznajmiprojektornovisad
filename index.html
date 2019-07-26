@@ -37,12 +37,6 @@
   <!-- ========== HEADER SECTION ========== -->
   <div id="aaacarousel-example-generic" class="aaacarousel aaaslide" data-ride="aaacarousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
-
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
@@ -109,11 +103,10 @@
   <div id="g">
     <div class="container">
       <div class="row">
-        <h3>DETALJI USLUGE</h3>
+        <h3>Iznajmljivanje projektora</h3>
         <br>
         <br>
         <div class="col-lg-8 desc">
-          <h4>Iznajmljivanje</h4>
           <p>Naši projektori su vrhunskog kvaliteta slike. Trudimo se da ih maksimalno održavamo i kontrolišemo (svi su još uvek pod garancijom). Posedujemo rezervne lampe za još veću pouzdanost naših projektora.
           <br>
           Model koji najviše iznajmljujemo je projektor EPSON EB X02, XGA
@@ -222,17 +215,14 @@
   <div id="f">
     <div class="container">
       <div class="row">
-        <h3><b>KONTAKTIRAJTE NAS</b></h3>
+        <h3><b>Zatražite profakturu:</b></h3>
         <br>
         <div class="col-lg-6">
-          <h3><b>Pošaljite nam imejl:</b></h3>
-          <h3><a href="mailto:projektor@trk-inovacije.com">projektor@trk-inovacije.com</a></h3>
+          <h3><b>Pošaljite nam imejl:</b> <a href="mailto:projektor@trk-inovacije.com">projektor@trk-inovacije.com</a></h3>
           <br>
         </div>
-        
         <div class="col-lg-6">  
-          <h3><b>Pozovite nas:</b></h3>
-            <h3>063 7298539</h3>
+          <h3><b>Pozovite nas:</b> <a href="tel:0637298539">063 7298539</a></h3>
         </div>
       </div>
       <div class="row">
@@ -242,9 +232,36 @@
         <div class="col-lg-8">
           <h3><b>Popunite formular:</b></h3>
           <p>
+            <!--
             <link rel="stylesheet" href="https://s3.amazonaws.com/funnelnow/uni-form/uni-form.css">
             <div id="funnelFormContainer"></div>
             <script type="text/javascript" src="https://funnelnow.com/widget/74"></script>
+            -->
+            <form action="https://formspree.io/projektor@trk.in.rs"
+              method="POST" class="form">
+              <input type="hidden" name="_subject" value="Iznajmljivanje
+              projektora">
+              <input type="hidden" name="_next"
+              value="//www.iznajmljivanjeprojektoranovisad.in.rs#send" />
+              <label for="name">Naziv vaše kompanije ili Vaše ime *</label>
+              <input type="text" name="name" id="name" required>
+              <label for="email">Vaša imejl adresa *</label>
+              <input type="email" name="_replyto" id="email" required>
+              <label for="phone">Vaš kontakt telefon (fiksni ili mobilni)
+              </label>
+              <input type="text" name="phone" id="phone">
+              <label for="date">Datum kada treba da dostavimo projektor</label>
+              <input type="text" name="date" id="date">
+              <label for="address">Ulica i broj gde treba da dostavimo projektor
+              </label>
+              <input type="text" name="address" id="address">
+              <label for="other">Mesto za poruku i ostala pitanja.
+                <br>
+                Npr Koji model želite ? Da li vam treba laptop ?
+              </label>
+              <textarea name="body"></textarea>
+              <input type="submit" value="Pošalji" class="send">
+            </form>
           </p>
           <br>
         </div>
