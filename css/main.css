@@ -1,3 +1,13 @@
+.thumb {
+  height: 50px;
+}
+.thumb:hover {
+  height: initial;
+  position: absolute;
+  z-index: 2;
+  left: 0%;
+}
+
 /*
  * Author: Carlos Alvarez
  * URL: http://alvarez.is
@@ -242,7 +252,7 @@ a:after {
 #itemwrap h1 {
 	margin-top: 40px;
 	color: white;
-	font-size: 100px;
+	font-size: 4em;
 	font-weight: 700;
 	letter-spacing: 3px;
 }
