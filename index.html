@@ -240,7 +240,7 @@
               <input type="hidden" name="_subject" value="Iznajmljivanje
               projektora">
               <input type="hidden" name="_next"
-              value="//www.iznajmljivanjeprojektoranovisad.in.rs#send" />
+              value="//www.iznajmljivanjeprojektoranovisad.in.rs#hvala" />
               <label for="name">Naziv vaše kompanije ili Vaše ime *</label>
               <input type="text" name="name" id="name" required>
               <label for="email">Vaša imejl adresa *</label>
@@ -260,6 +260,12 @@
               <textarea name="body"></textarea>
               <input type="submit" value="Pošalji" class="send">
             </form>
+            <script>
+              if (location.hash == "#hvala") {
+                alert("Hvala Vam na kontaktu.\nBrzo ćemo vam odgovoriti.\nObično u roku od 15 minuta.");
+                location.hash = "";
+              }
+            </script>
           </p>
           <br>
         </div>
