@@ -1,3 +1,6 @@
+img {
+  width: 100%;
+}
 .new-site {
   position: fixed;
   bottom: 0px;
@@ -48,6 +51,20 @@
   background: #f85c37;
   color: #ffffff;
   padding: 0 100px;
+}
+
+.show-on-hover-target {
+  display: none;
+}
+.show-on-hover:hover .show-on-hover-target {
+  display: block;
+}
+.show-on-hover:hover .show-on-hover-non-target {
+  display: none;
+}
+
+.white {
+  color: white
 }
 
 /*
@@ -239,8 +256,8 @@ a:after {
 
 #f {
 	background: #2f2f2f;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	text-align: center
 }
 
