@@ -399,12 +399,14 @@
     <!--   <a href='https://iznajmljivanje-sup-daske-novi-sad.trk.in.rs'>Iznajmljivanje SUP daske Novi Sad</a> &bull; -->
     <!-- </div> -->
     <script>
-// find assets/references/* -printf "%TY-%Tm-%TdT%TT %p\n" | sort -nr  | cut -d' ' -f2- | awk '{print "\""$0"\","}'
+//      find assets/references/* -maxdepth 0 -type f -printf "%TY-%Tm-%TdT%TT %p\n" | sort -nr  | cut -d' ' -f2- | awk '{print "\""$0"\","}'
+
 // touch -d "1 month ago" "assets/references/uporedni prikaz belog i crnog projektora iza.jpg",
 
       var images = [
-        "assets/references/restoran jurosevic vrbas.jpg",
-        "assets/references/vila_moskva_dva_platna_240x240_sa_puno_ljudi.jpg",
+        "assets/references/short throw projektor i platno 180x180.jpg",
+"assets/references/restoran jurosevic vrbas.jpg",
+"assets/references/vila_moskva_dva_platna_240x240_sa_puno_ljudi.jpg",
 "assets/references/vila_moskva_dva_platna_240x240.jpg",
 "assets/references/veliko platno 240x240 u snp posle motivacionog govora.jpg",
 "assets/references/veliko platno 240x240 u snp motivacioni govor.jpg",
