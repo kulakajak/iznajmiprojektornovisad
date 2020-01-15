@@ -369,8 +369,8 @@
           <h3>Nedavno iznajmljivanje; Powerful Lumens projektor u Konferencijskoj sali na SPENSu</h3>
           <img src="assets/references/vila_moskva_dva_platna_240x240_sa_puno_ljudi.jpg"
           alt="iznajmljivanje projektora crni epson eb x02 novi sad">
-          <h3><b>Pogledajte <a href='javascript:void()' onclick='loadReferences()'>ostale reference</a></b></h3>
           <div id='references'></div>
+          <button onclick="loadNextImages()" style='margin-top: 5px'>Pogledajte jos referenci</button>
         </div>
       </div><!-- /container -->
     </div><!-- /f -->
@@ -409,10 +409,9 @@
 // touch -d "1 month ago" "assets/references/uporedni prikaz belog i crnog projektora iza.jpg",
 
       var images = [
-"assets/references/vila_moskva_dva_platna_240x240_sa_puno_ljudi.jpg",
+"assets/references/veliko_platno_spens_konferencijska_sala_lumens_projektor_akud_sonja.jpg",
 "assets/references/malo_platno_gradsko_groblje_sahrana.jpg",
 "assets/references/kafe_pause_concept.jpg",
-"assets/references/veliko_platno_spens_konferencijska_sala_lumens_projektor_akud_sonja.jpg",
 "assets/references/short throw projektor i platno 180x180.jpg",
 "assets/references/restoran jurosevic vrbas.jpg",
 "assets/references/vila_moskva_dva_platna_240x240.jpg",
@@ -445,45 +444,11 @@
         $('#references').append(`<h1 class='white'>${alt}</h1><img src="${img}" alt="${alt}">`)
         index ++
       }
-      function loadReferences() {
-        loadImage()
-        document.addEventListener("scroll", function (event) {
-          if (getDocHeight() == getScrollXY()[1] + window.innerHeight) {
-            console.log('.')
-            loadImage()
-          }
-        });
+      function loadNextImages() {
+        for(i=0; i < 5; i++) {
+          loadImage()
+        }
       }
-// http://jsfiddle.net/W75mP/
-//below taken from http://www.howtocreate.co.uk/tutorials/javascript/browserwindow
-function getScrollXY() {
-    var scrOfX = 0, scrOfY = 0;
-    if( typeof( window.pageYOffset ) == 'number' ) {
-        //Netscape compliant
-        scrOfY = window.pageYOffset;
-        scrOfX = window.pageXOffset;
-    } else if( document.body && ( document.body.scrollLeft || document.body.scrollTop ) ) {
-        //DOM compliant
-        scrOfY = document.body.scrollTop;
-        scrOfX = document.body.scrollLeft;
-    } else if( document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
-        //IE6 standards compliant mode
-        scrOfY = document.documentElement.scrollTop;
-        scrOfX = document.documentElement.scrollLeft;
-    }
-    return [ scrOfX, scrOfY ];
-}
-
-//taken from http://james.padolsey.com/javascript/get-document-height-cross-browser/
-function getDocHeight() {
-    var D = document;
-    return Math.max(
-        D.body.scrollHeight, D.documentElement.scrollHeight,
-        D.body.offsetHeight, D.documentElement.offsetHeight,
-        D.body.clientHeight, D.documentElement.clientHeight
-    );
-}
-
     </script>
 
   </body>
