@@ -1,6 +1,9 @@
 img {
   width: 100%;
 }
+.max-width-100 {
+  max-width: 100%;
+}
 .new-site {
   position: fixed;
   bottom: 0px;
