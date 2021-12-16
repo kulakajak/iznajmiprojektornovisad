@@ -1,4 +1,9 @@
 url: https://www.iznajmljivanjeprojektoranovisad.in.rs
 gems:
   - jekyll-sitemap
+  - jekyll-seo-tag
+
+title: 'Iznajmljivanje projektora Novi Sad'
+description: Najpovoljnije izdavanje projektora u Novom Sadu za sve vase prezentacije
+logo: https://www.iznajmljivanjeprojektoranovisad.in.rs/assets/epson-eb-2042.png
 

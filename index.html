@@ -156,7 +156,7 @@ layout: default
                                                                    class="thumb">
           </div>
           <h4>Projektor EPSON EB-X02</h4>
-          <strong>2.000 dinara/dan + 800 din isporuka i preuzimanje</strong>
+          <strong>2.000 dinara/dan + 1000 din isporuka i preuzimanje</strong>
         </div>
         <div class="col-sm-4 ">
           <img src="assets/epson-eb-520.png" alt="iznajmljivanje projektora beli epson eb 520 novi sad">
@@ -167,7 +167,7 @@ layout: default
                                                                    class="thumb">
           </div>
           <h4>Short Throw Projektor EPSON EB-520</h4>
-          <strong>3.000 dinara/dan + 800 din isporuka i preuzimanje</strong>
+          <strong>3.000 dinara/dan + 1000 din isporuka i preuzimanje</strong>
         </div>
         <div class="col-sm-4 ">
           <img src="assets/epson-eb-2042.png" alt="iznajmljivanje projektora beli epson eb 2042 novi sad">
@@ -176,7 +176,7 @@ layout: default
                                                           class="thumb">
           </div>
           <h4>Powerful Lumens Projektor EPSON EB-2042</h4>
-          <strong>3.000 dinara/dan + 800 din isporuka i preuzimanje</strong>
+          <strong>3.000 dinara/dan + 1000 din isporuka i preuzimanje</strong>
         </div>
       </div>
       <br>
@@ -191,7 +191,7 @@ layout: default
               <img src="assets/tripod.jpg" alt="projektor platno 180x180cm">
             </div>
             <h3>Platno 180x180cm</h3>
-            <strong>1200 dinara/dan + 800 din isporuka i preuzimanje</strong>
+            <strong>1200 dinara/dan + 1000 din isporuka i preuzimanje</strong>
           </div>
           <div class="col-sm-4">
             <div>
@@ -199,14 +199,14 @@ layout: default
               200x200cm" style="width:70%">
             </div>
             <h3>Platno 200x200cm</h3>
-            <strong>1500 dinara/dan + 800 din isporuka i preuzimanje</strong>
+            <strong>1500 dinara/dan + 1000 din isporuka i preuzimanje</strong>
           </div>
           <div class="col-sm-4">
             <div>
               <img src="assets/tripod.jpg" alt="projektor platno 240x240cm" style="transform: rotateY(180deg);">
             </div>
             <h3>Platno 240x240cm</h3>
-            <strong>2200 dinara/dan + 800 din isporuka i preuzimanje</strong>
+            <strong>2200 dinara/dan + 1000 din isporuka i preuzimanje</strong>
           </div>
         </div>
       </div><!-- /container -->
@@ -216,8 +216,8 @@ layout: default
         <div class="col-lg-6 desc">
           <h3 class='text-center'>Dodatne usluge</h3>
           <h4>
-            Dostava <b>800 din</b>
-            <small>Isporuka 400 din i preuzimanje 400 din na teritoriji Novog Sada</small>
+            Dostava <b>1000 din</b>
+            <small>Isporuka 500 din i preuzimanje 500 din na teritoriji Novog Sada</small>
           </h4>
           <h4>
             <i class="icon-bolt"></i>Tehničar <b>1.500 din/sat</b>
@@ -246,8 +246,8 @@ layout: default
             <h4>
               <b>Popusti se sabiraju samo do %50</b>
               <small>
-                Na primer za <b>4 uzastopna dana</b> za beli projektor (<b>3000din</b>) i dostavu (<b>800din</b>) za stalne kupce je <strike>12.800</strike> <b>6.400 dinara</b>
-                <br>(4 * 3.000 + 800) - 10% - 40% = 12.800 - 50% = <b>6.400din</b>
+                Na primer za <b>4 uzastopna dana</b> za beli projektor (<b>3000din</b>) i dostavu (<b>1000din</b>) za stalne kupce je <strike>13.000</strike> <b>6.500 dinara</b>
+                <br>(4 * 3.000 + 1000) - 10% - 40% = 13.000 - 50% = <b>6.500din</b>
               </small>
             </h4>
           </p>
@@ -360,11 +360,6 @@ layout: default
       </p>
     </div>
   </div>
-  <div class="new-site" onclick="window.location.assign('https://projektor.trk.in.rs')">
-    Pogledajte novi sajt
-    <br>
-    projektor.trk.in.rs
-  </div>
   <!-- <div class='text-center'> -->
   <!--   Prijatelji sajta: -->
   <!--   <1!-- {% comment %} <a href='https://iznajmljivanjeprojektoranovisad.in.rs'>Iznamljivanje projektora Novi Sad</a> &bull; {% endcomment %} --1> -->
@@ -423,5 +418,28 @@ layout: default
     }
   </script>
 
+  <!-- https://developers.google.com/search/docs/advanced/structured-data/product#single-product-with-shipping -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Izdavanje projektora Novi Sad",
+      "description": "Iznajmite projektor u Novom Sadu.",
+      "image": "https://www.iznajmljivanjeprojektoranovisad.in.rs/assets/epson-eb-2042.png",
+      "offers"; {
+        "@type": "Offer",
+        "price": "2000",
+        "priceCurrency": "RSD",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "1000",
+            "currency": "RSD"
+          }
+        }
+      }
+    }
+  </script>
 </div>
 
