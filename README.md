@@ -12,6 +12,21 @@ Project is on gh-pages. Deploy simply by git push
 git push
 ~~~
 
+When using non default ssh key you can use `kgithub`
+```
+# .ssh/config
+Host kgithub.com
+  Hostname github.com
+  IdentityFile ~/.ssh/id_rsa_kulakajak
+
+git clone git@kgithub.com:kulakajak/iznajmiprojektornovisad.git
+cd iznajmiprojektornovisad
+git pull
+
+# push does not work since it uses default key, not for kgithub, so we need to:
+ssh-agent bash -c 'ssh-add ~/.ssh/id_rsa_kulakajak; git push'
+```
+
 To add reference image you can follow this steps
 
 ```
