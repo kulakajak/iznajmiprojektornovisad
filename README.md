@@ -24,7 +24,7 @@ cd iznajmiprojektornovisad
 git pull
 
 # push does not work since it uses default key, not for kgithub, so we need to:
-ssh-agent bash -c 'ssh-add ~/.ssh/id_rsa_kulakajak; git push'
+ssh-add ~/.ssh/id_rsa_kulakajak
 ```
 
 To add reference image you can follow this steps
