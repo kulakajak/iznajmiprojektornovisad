@@ -42,5 +42,5 @@ image.rb watermark iznamljivanjeprojektoranovisad.in.rs assets/references/*.jpg
 touch -d "1 month ago" "assets/references/uporedni prikaz belog i crnog projektora iza.jpg",
 
 # to copy to javascript
-find assets/references/* -maxdepth 0 -type f -printf "%TY-%Tm-%TdT%TT %p\n" | sort -nr  | cut -d' ' -f2- | awk '{print "\""$0"\","}'
+gfind assets/references/* -maxdepth 0 -type f -printf "%TY-%Tm-%TdT%TT %p\n" | sort -nr  | cut -d' ' -f2- | awk '{print "\""$0"\","}'
 ```
