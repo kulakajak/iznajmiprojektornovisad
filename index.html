@@ -229,40 +229,28 @@ layout: default
           <h3 class='text-center'>Dodatne usluge</h3>
           <h4>
             Dostava <b>1000 din</b>
-            <small>Isporuka 500 din i preuzimanje 500 din na teritoriji Novog Sada</small>
+            <small>Isporuka 500 din i preuzimanje 500 din na teritoriji Novog Sada u odredjeno vreme po dogovoru. Za okolna mesta (npr Petrovaradin) je duplo skuplje</small>
           </h4>
+            <b>Napomena:</b> dostava ne podrazumeva montiranje
+            <b>Napomena:</b> za bilo kakvo cekanje duze od 15 minuta podrazumeva se da ste zapoceli tehnicki sat 2.000din
           <h4>
-            <i class="icon-bolt"></i>Tehničar <b>1.500 din/sat</b>
-            <small>Za proslave (svadba, rođendan, matura) možete unajmiti naše tehničare koji će doneti projektor i platno,
-              montirati, pustiti vaš materijal i vratiti opremu.
+            <i class="icon-bolt"></i>Tehničar <b>2.000 din/sat</b>
+            <small>Za proslave (svadba, rođendan, matura) možemo umesto vas montirati i pustiti vaš materijal
             </small>
-          </h4>
-          <h4>
-            Izrada video materijala <b>2.000 din za 5 minuta snimka</b>
-            <small>Ukoliko želite da skeniramo fotografije, ubacite neki snimak ili zanimljiv tekst, možete nam se obratiti za ponudu.</small>
           </h4>
         </div>
         <div class="col-lg-6 desc">
-          <h3 class='text-center'>Popusti</h3>
-          <h4><i class="icon-bolt"></i>20% ZA DVA UZASTOPNA DANA</h4>
-          <h4><i class="icon-bolt"></i>30% ZA TRI UZASTOPNA DANA</h4>
-          <h4><i class="icon-bolt"></i>40% ZA ČETIRI UZASTOPNA DANA</h4>
-          <h4><i class="icon-bolt"></i>50% ZA PET ILI VIŠE UZASTOPNIH DANA</h4>
-          <hr>
+          <h3 class='text-center'>Izrada video materijala</h3>
+          <h4>
+            Izrada video materijala <b>3.000 din za 5 minuta snimka</b>
+            <small>Ukoliko želite da skeniramo fotografije, ubacite neki snimak ili zanimljiv tekst, možete nam se obratiti za detaljniju ponudu.</small>
+          </h4>
           <h4>
             <i class="icon-bolt"></i>10% ZA STALNE KUPCE
             <small>Ukoliko ste u toku kalendarske godine već bili naš mušterija onda možete da se oslonite na 10% POPUSTA ZA SVAKO NAREDNO
               IZNAJMLJIVANJE.</small>
           </h4>
-          <p>
-            <h4>
-              <b>Popusti se sabiraju samo do %50</b>
-              <small>
-                Na primer za <b>4 uzastopna dana</b> za beli projektor (<b>3000din</b>) i dostavu (<b>1000din</b>) za stalne kupce je <strike>13.000</strike> <b>6.500 dinara</b>
-                <br>(4 * 3.000 + 1000) - 10% - 40% = 13.000 - 50% = <b>6.500din</b>
-              </small>
-            </h4>
-          </p>
+          <h4><i class="icon-bolt"></i>20% ZA DVA UZASTOPNA DANA</h4>
         </div>
       </div>
     </div>
@@ -276,7 +264,7 @@ layout: default
       <div class="row" id='naruci-ponudu'>
         <h2 class='white'>Naručivanje je lako</h2>
         <h3>
-          Popunite formular i mi vam šaljemo ponudu/profakturu uglavnom u roku od 15 minuta
+          Popunite formular i mi vam šaljemo profakturu uglavnom u roku od 15 minuta
         </h3>
         <form action="https://formspree.io/projektor@trk.in.rs"
               method="POST" class="form">
@@ -317,6 +305,11 @@ layout: default
             <input type="text" name="return-date" id="return-date" placeholder="Isti dan oko 21h">
           </div>
           <div class='form-group'>
+            <label for="napolju">Prikazivanje ce se odvijati napolju na otvorenom prostoru
+            </label>
+            <input type="checkbox" name="napolju" value="da" id="napolju" required style="width:3rem;height:3rem">
+          </div>
+          <div class='form-group'>
             <label for="other">Mesto za poruku i ostala pitanja.
               <br>
               Koji model želite ?
@@ -327,7 +320,8 @@ layout: default
               <br>
               velike sale treba posebno ozvučenje.
             </label>
-            <textarea id='other' name="body" rows="6" placeholder="Potreban nam je short throw projektor pošto u sali nema dovoljno mesta. Treba nam i platno 180x180cm."></textarea>
+            <textarea id='other' name="body" rows="6" placeholder="Potreban nam je short throw projektor pošto u sali nema dovoljno mesta. Treba nam i platno
+              180x180cm. Treba nam USB-C adapter za MAC"></textarea>
           </div>
           <div class='form-group'>
             <label for="saglasan">Prihvatam da cu opremu razumno koristiti i cuvati sa paznjom
