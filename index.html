@@ -342,8 +342,8 @@ layout: default
             $("#submit").on("click", function(e) {
               if (e.currentTarget.form.checkValidity()) {
                 console.log("submit")
-                let email = document.getElementsById("email")
-                fbq("track", "Contact", { email: email })
+                let email = document.getElementById("email")
+                fbq("track", "Contact", { email: email.value })
               } else {
                 alert("Please fill requred fields")
               }
