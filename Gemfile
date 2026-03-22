@@ -36,3 +36,9 @@ gem "webrick", "~> 1.7"
 
 gem "jekyll-sitemap"
 gem "jekyll-seo-tag"
+
+gem "csv", "~> 3.3"
+
+gem "base64", "~> 0.3.0"
+
+gem "bigdecimal", "~> 4.0"
